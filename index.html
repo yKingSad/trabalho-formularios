@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <form action="teste.php" method="get" id="form">
+            <h1>Trabalho Lucas Simonetto</h1>
+            <h1>Faça seu Login!</h1>
+            <div class="input-box">
+                <input type="text" name="userName" id="userName" placeholder="Nome de Usuário">
+                <i class='bx bxs-user'></i>
+
+                <br><small class="small-error"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="userPassword" id="userPassword" placeholder="Senha">
+                <i class='bx bx-lock-alt' id='iconSenha'></i>
+                <br><small class="small-error"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="userEmail" id="userEmail" placeholder="Email">
+                <i class='bx bx-envelope'></i>
+                <br><small class="small-error"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="userCPF" id="userCPF" placeholder="CPF">
+                <i class='bx bxs-wallet-alt'></i>
+                <br><small class="small-error"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="userDataNasc" id="userDataNasc" placeholder="Data de Nascimento">
+                <i class='bx bxs-calendar'></i>
+                <br><small class="small-error"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="userContato" id="userContato" placeholder="Contato">
+                <i class='bx bxs-contact'></i>
+                <br><small class="small-error"></small>
+            </div>
+
+            <button type="button" class="btn" id="btnValida">Validar</button><br><br>
+            <button type="button" class="btn" id="btnAtualizar">Limpar</button><br><br>
+            <button type="submit" class="btn" id="btnSubmit">Enviar</button>
+        </form>
+
+        <br><hr><br>
+
+        <h3 id="alinhar">Atenção!</h3>
+        <ul>
+            <li>
+                <p>Para ver sua senha, <span>clique</span> no ícone de cadeado!</p>
+            </li>
+            <li>
+                <p>Nome de Usuário <span>não pode conter</span> os seguintes caracteres<br> ( _ , - , . , @ , * )</p>
+            </li>
+            <li>
+                <p>Senha <span>deve conter</span> ao menos um número, e <span>ter mais que 8</span> dígitos</p>
+            </li>
+            <li>
+                <p>Email <span>deve conter</span> o @</p>
+            </li>
+            <li>
+                <p>CPF <span>deve ser real</span>, e <span>deve seguir o padrão para envio</span>:<br>12345678910</p>
+            </li>
+            <li>
+                <p>Data de nascimento <span>deve seguir o padrão para envio:</span> dd/mm/aaaa</p>
+            </li>
+            <li>
+                <p>Contato <span>deve seguir o padrão para envio:</span><br>(XX)XXXXX-XXXX</p>
+            </li><br>
+        </ul>
+
+        <h3 id="alinhar">Observação!</h3>
+        <p id="alinhar">Todos os campos devem seguir o padrão de envio (CPF apenas o dígito, Data de Nascimento
+            entre barras e Contato com a formatação informada acima), caso contrário o formulário não será enviado!</p>
+        <br>
+        <hr>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
